@@ -20,7 +20,8 @@ const x = setInterval(function () {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML =
-      "Happy Birthday Highly Esteemed CMD, Pastor Henry Akasili";
+      "Happy Birthday Highly Esteemed CMD, Pastor Henry Akasili.";
+    document.getElementById("demo").style.fontSize = "2rem";
   }
 }, 1000);
 
@@ -34,12 +35,11 @@ window.onload = function () {
     "photos/PastorHenrySir6.jpg",
     "photos/PastorHenrySir7.jpg",
     "photos/PastorHenrySir8.jpg",
-    "photos/PastorHenrySir9.jpg",
   ];
 
   setInterval(changeImage, 5000);
   function changeImage() {
-    var i = Math.floor(Math.random() * 9);
+    var i = Math.floor(Math.random() * 8);
 
     document.body.style.backgroundImage =
       "linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('" +

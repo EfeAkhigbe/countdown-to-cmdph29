@@ -6,11 +6,7 @@
 }
 
 body {
-  background-image: linear-gradient(
-    0deg,
-    rgba(255, 0, 150, 0.3),
-    rgba(255, 0, 150, 0.3)
-  );
+  padding: 0.5rem;
 }
 
 .container {
@@ -100,5 +96,12 @@ h2 {
 
   h2 {
     margin-top: 3rem;
+  }
+
+  body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
 }
